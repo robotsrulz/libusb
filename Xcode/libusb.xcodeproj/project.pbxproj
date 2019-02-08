@@ -762,6 +762,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1443EE8616417E63007E0579 /* libusb_debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZSZNK2H5U;
+				INSTALL_PATH = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -769,6 +774,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1443EE8916417EA6007E0579 /* libusb_release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZSZNK2H5U;
+				INSTALL_PATH = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -876,6 +886,7 @@
 				006AD4211C8C5A90007F8C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		008FBF2B1628B79300BC5BE2 /* Build configuration list for PBXProject "libusb" */ = {
 			isa = XCConfigurationList;
