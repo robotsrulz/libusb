@@ -64,7 +64,11 @@ typedef unsigned __int32  uint32_t;
 #if defined(__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L)
 #define ZERO_SIZED_ARRAY		/* [] - valid C99 code */
 #else
+#if defined(_WIN32) || defined(__CYGWIN__) || defined(_WIN32_WCE)
+#define ZERO_SIZED_ARRAY	1
+#else
 #define ZERO_SIZED_ARRAY	0	/* [0] - non-standard, but usually working code */
+#endif
 #endif
 
 /* 'interface' might be defined as a macro on Windows, so we need to

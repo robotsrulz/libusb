@@ -22,6 +22,7 @@
     <ProjectName>libusb-1.0 (static)</ProjectName>
     <ProjectGuid>{349EE8F9-7D25-4909-AAF5-FF3FADE72187}</ProjectGuid>
     <RootNamespace>libusb</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
@@ -39,8 +40,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <IntDir>$(SolutionDir)..\$(Platform)\$(Configuration)\lib\$(TargetName)\</IntDir>
-    <OutDir>$(SolutionDir)..\$(Platform)\$(Configuration)\lib\</OutDir>
+    <IntDir>$(SolutionDir)\$(Platform)\$(Configuration)\lib\$(TargetName)\</IntDir>
+    <OutDir>$(SolutionDir)\$(Platform)\$(Configuration)\lib\</OutDir>
     <TargetName>libusb-1.0</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
@@ -53,11 +54,11 @@
     <ClCompile Condition="'$(Configuration)'=='Debug'">
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <ClCompile Condition="'$(Configuration)'=='Release'">
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Lib>
       <OutputFile>$(OutDir)libusb-1.0.lib</OutputFile>
